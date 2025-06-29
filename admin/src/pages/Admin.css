@@ -1,0 +1,70 @@
+.admin-container {
+  padding: 30px;
+  background: #f4fdf4;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2e7d32;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+}
+
+th {
+  background-color: #2e7d32;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f8f1;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn {
+  background-color: #e53935;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+.back-button {
+  background-color: transparent;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #2e7d32;
+  color: white;
+}

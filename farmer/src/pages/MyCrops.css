@@ -1,0 +1,88 @@
+.mycrops-container {
+  background: linear-gradient(135deg, #eafaf0, #d0f0df, #ffffff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button-top {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  background-color: #e0f2f1;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #1b5e20;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-button-top:hover {
+  background-color: #b2dfdb;
+}
+
+.mycrops-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #1b5e20;
+}
+
+.crops-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.crop-card {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.crop-card:hover {
+  transform: translateY(-5px);
+}
+
+.crop-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.crop-card input {
+  width: 100%;
+  padding: 2px;
+  margin: 4px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.crop-card button {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.delete-btn {
+  background-color: #ffcdd2;
+  color: #c62828;
+}

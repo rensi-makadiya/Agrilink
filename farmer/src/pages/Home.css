@@ -1,0 +1,100 @@
+/* Fullscreen wrapper with background */
+.home-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://i.pinimg.com/736x/ba/44/61/ba4461cd9b8b1d46dad3355329c8cfe1.jpg'); /* 🌿 Any farm image */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Blur overlay */
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+/* Content stays on top */
+.home-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card box */
+.home-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Welcome title */
+.home-card h2 {
+  margin-bottom: 30px;
+  color: #1b5e20;
+  font-size: 28px;
+}
+
+/* Button group */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Buttons */
+.home-button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0e7a3e;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+}
+
+.home-button:hover {
+  background-color: #066c3b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .home-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .home-button {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,102 @@
+/* Page background wrapper */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.add-crop-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eafaf0, #d0f0df, #ffffff);
+  background-size: 400% 400%;
+  animation: bgMove 15s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+/* Animate gradient */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Centered form card */
+form {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f4f9f5;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #145d17;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 600px) {
+  form {
+    padding: 30px 20px;
+  }
+}
+.back-button-top {
+  position: absolute;
+  top: 20px;   /* closer to top */
+  left: 20px;  /* closer to left */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #1b5e20;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.back-button-top:hover {
+  transform: scale(1.1);
+  color: #0e7a3e;
+}

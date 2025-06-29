@@ -1,0 +1,65 @@
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url('https://media.istockphoto.com/id/1371068952/photo/mortgage-loan-officer-assisting-farmer-in-financial-allowance-application-process.jpg?s=612x612&w=0&k=20&c=M9gYXHoMTYIQxIkziWUEj2gbYi4IJUXMJkbCLrBYfRE=') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-card button:hover {
+  background-color: #2e7d32;
+}
+
+.login-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

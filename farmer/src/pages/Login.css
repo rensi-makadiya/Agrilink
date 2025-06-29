@@ -1,0 +1,157 @@
+/* Fullscreen background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card design */
+.login-card {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  background-color: #eafaf0;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-panel img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.left-panel h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.left-panel p {
+  color: #555;
+  font-size: 15px;
+  max-width: 350px;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel h2 {
+  margin-bottom: 30px;
+  color: #1b5e20;
+  text-align: center;
+}
+
+/* Inputs */
+.login-input {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #c2c2c2;
+  font-size: 16px;
+  width: 100%;
+  background-color: #f1f8e9;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+  box-shadow: 0 0 0 3px rgba(30, 150, 90, 0.2);
+  border-color: #1b5e20;
+  outline: none;
+}
+
+/* Primary button */
+.login-button {
+  padding: 12px 16px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #145d17;
+}
+
+/* Guest login button */
+.guest-button {
+  background-color: transparent;
+  color: #1b5e20;
+  border: 2px solid #1b5e20;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guest-button:hover {
+  background-color: #eafaf0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 30px;
+  }
+}
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.register-link span {
+  color: #0e7a3e;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.register-link span:hover {
+  color: #066c3b;
+}

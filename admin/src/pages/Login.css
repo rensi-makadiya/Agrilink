@@ -1,0 +1,40 @@
+.login-container {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #1b5e20;
+}

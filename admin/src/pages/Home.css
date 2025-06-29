@@ -1,0 +1,28 @@
+.admin-dashboard {
+  text-align: center;
+  padding: 40px;
+  background: #f3f3f3;
+  min-height: 100vh;
+}
+
+.admin-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.admin-buttons button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.admin-buttons button:hover {
+  background-color: #1b5e20;
+}

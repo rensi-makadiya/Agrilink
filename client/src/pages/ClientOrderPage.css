@@ -1,0 +1,86 @@
+.order-container {
+  padding: 30px;
+  background: linear-gradient(to right, #e6ffe6, #ccffcc);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.order-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 25px;
+}
+
+.location-input {
+  width: 60%;
+  margin: 0 auto 30px;
+  display: block;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+}
+
+.crops-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.crop-order-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.crop-order-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.quantity-input {
+  width: 100%;
+  padding: 3px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.order-button {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #388e3c;
+}

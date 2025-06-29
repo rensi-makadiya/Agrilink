@@ -1,0 +1,67 @@
+.client-login-container {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTotQuV9KVTrTOQC_KJmMxEWvlqmTB5eVZmHjHRl4MoRpRH0A4ZWKTKJr1-TNcO8lo0-f4&usqp=CAU') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.client-login-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.client-login-card h2 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.client-login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.client-login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.client-login-card button:hover {
+  background-color: #2e7d32;
+}
+
+.register-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
